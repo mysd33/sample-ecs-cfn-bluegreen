@@ -6,10 +6,11 @@
 * https://qiita.com/yusuke-ka/items/02207af95b88ce06bd51
 
 ## 制約
-* 既存のリソースのImportが使えない
+* 既存のリソースのImportValueが使えない
+* スタックのネストが使えない
 * 大阪リージョンでは使えない
 
-## 環境構築
+## 環境構築Value
 ### 1. VPCおよびサブネット、InternetGateway等の作成
 ```sh
 aws cloudformation validate-template --template-body file://cfn-vpc.yaml
